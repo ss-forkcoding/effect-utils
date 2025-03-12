@@ -1,7 +1,7 @@
 {
   "name": "@fork-coding/effect-utils",
   "author": "fork-coding",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Utilities for Effect lib",
   "license": "MIT",
   "main": "dist/index.js",
