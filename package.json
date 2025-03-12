@@ -1,13 +1,21 @@
 {
-  "name": "effect-utils",
+  "name": "@fork-coding/effect-utils",
   "author": "fork-coding",
   "version": "0.0.1",
   "description": "Utilities for Effect lib",
+  "license": "MIT",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "rollup -c",
-    "prepare": "npm run build"
+    "prepare": "npm run build",
+    "publish": "npm publish --access public"
+  },
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs.js",
+      "import": "./dist/index.esm.js"
+    }
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^28.0.3",
