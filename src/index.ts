@@ -18,11 +18,11 @@ const printError = (content: string) =>
   Console.error(`❌ [ERROR]:[${PROGRAM_NAME}] - ${content} ${getFormattedTime()}`);
 const printAssert = (target: boolean) => Console.assert(target);
 
-export const consoleProgram = (type: ConsoleType, content: string) =>
+export const consoleProgram = (type: ConsoleType, content: string | boolean) =>
   Match.value(type).pipe(
-    Match.when("LOG", () => printDebug(content)),
-    Match.when("WARN", () => printWarn(content)),
-    Match.when("ERROR", () => printError(content)),
-    Match.when("ASSERT", () => printAssert(true)),
+    Match.when("LOG", () => printDebug(content as string)),
+    Match.when("WARN", () => printWarn(content as string)),
+    Match.when("ERROR", () => printError(content as string)),
+    Match.when("ASSERT", () => printAssert(content as boolean)),
     Match.exhaustive
   );
