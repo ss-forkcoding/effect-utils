@@ -21,6 +21,16 @@
       "import": "./dist/array-utils.esm.js"
     }
   },
+  "typesVersions": {
+    "*": {
+      "array-utils": [
+        "./dist/array-utils.d.ts"
+      ],
+      "*": [
+        "./dist/index.d.ts"
+      ]
+    }
+  },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^28.0.3",
     "@rollup/plugin-node-resolve": "^16.0.1",
