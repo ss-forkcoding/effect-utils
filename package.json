@@ -19,6 +19,11 @@
       "types": "./dist/array-utils.d.ts",
       "require": "./dist/array-utils.cjs.js",
       "import": "./dist/array-utils.esm.js"
+    },
+    "./condition-utils": {
+      "types": "./dist/condition-utils.d.ts",
+      "require": "./dist/condition-utils.cjs.js",
+      "import": "./dist/condition-utils.esm.js"
     }
   },
   "typesVersions": {
