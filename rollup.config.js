@@ -4,7 +4,7 @@ import typescript from "rollup-plugin-typescript2";
 import terser from "@rollup/plugin-terser";
 
 export default {
-  input: { index: "src/index.ts", "array-utils": "src/array-util.ts" }, // 엔트리 파일
+  input: { index: "src/index.ts", "array-utils": "src/array-utils.ts" }, // 엔트리 파일
   output: [
     {
       dir: "dist",
