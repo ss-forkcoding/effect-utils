@@ -4,15 +4,17 @@ import typescript from "rollup-plugin-typescript2";
 import terser from "@rollup/plugin-terser";
 
 export default {
-  input: "src/index.ts", // 엔트리 파일
+  input: { index: "src/index.ts", "array-utils": "src/array-util.ts" }, // 엔트리 파일
   output: [
     {
-      file: "dist/index.cjs.js",
+      dir: "dist",
+      entryFileNames: "[name].cjs.js",
       format: "cjs",
       sourcemap: true,
     },
     {
-      file: "dist/index.esm.js",
+      dir: "dist",
+      entryFileNames: "[name].esm.js",
       format: "es",
       sourcemap: true,
     },

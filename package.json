@@ -15,6 +15,11 @@
       "types": "./dist/index.d.ts",
       "require": "./dist/index.cjs.js",
       "import": "./dist/index.esm.js"
+    },
+    "./array-utils": {
+      "types": "./dist/array-utils.d.ts",
+      "require": "./dist/array-utils.cjs.js",
+      "import": "./dist/array-utils.esm.js"
     }
   },
   "devDependencies": {
